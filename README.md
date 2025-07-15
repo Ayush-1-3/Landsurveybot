@@ -1,4 +1,5 @@
 🚜 Arduino-Based Land Survey Bot
+
 The Land Survey Bot is an autonomous, Arduino-powered robot designed for land surveying and data collection. It logs GPS coordinates to an SD card, calculates and displays the distance traveled on an LCD, tracks movement using rotary encoders, and enables wireless control and data transmission via Bluetooth. The logged GPS data can be visualized as a route on a map using GPSVisualizer.
 This project is ideal for applications such as agricultural land mapping, environmental monitoring, or educational robotics projects. The bot combines precise GPS tracking, real-time data display, and remote control capabilities, making it a versatile tool for surveying tasks.
 
@@ -14,50 +15,47 @@ Open-Source: Fully customizable Arduino code and hardware design for hobbyists a
 
 🧰 Hardware Requirements
 
-
-
 Component
 Description
 
 
-
-Arduino Nano/UNO
+*Arduino Nano/UNO
 Microcontroller for processing and control
 
 
-NEO-6M GPS Module
+*NEO-6M GPS Module
 Captures GPS coordinates
 
 
-SD Card Module
+*SD Card Module
 Logs GPS data to a .csv file
 
 
-16x2 LCD + Potentiometer
+*16x2 LCD + Potentiometer
 Displays real-time distance traveled
 
 
-HC-05 Bluetooth Module
+*HC-05 Bluetooth Module
 Enables wireless data transfer and control
 
 
-Rotary Encoders (x2)
+*Rotary Encoders (x2)
 Tracks wheel rotations for distance measurement
 
 
-L298N Motor Driver
+*L298N Motor Driver
 Controls four DC motors
 
 
-DC Motors (x4)
+*DC Motors (x4)
 Drives the bot for movement
 
 
-Battery Pack
+*Battery Pack
 9V or AAA batteries for power supply
 
 
-Chassis & Wheels
+*Chassis & Wheels
 Mechanical structure for mobility
 
 
@@ -71,15 +69,23 @@ Push buttons or switches for manual control (if implemented).
 📷 Bot Preview
 Image placeholder: The actual bot image will be added soon.
 
+
+
 📡 GPS Data Visualization
+
 The GPS data logged by the bot can be visualized as a route on a map using GPSVisualizer.
 Steps to Visualize:
 
 Remove the SD card from the bot and access the log.csv file.
+
 Visit GPSVisualizer.
+
 Select "Convert to GPX" or "Draw a map".
+
 Upload the log.csv file.
+
 Choose Google Maps as the output format.
+
 View and analyze the bot’s travel path.
 
 
@@ -87,32 +93,40 @@ View and analyze the bot’s travel path.
 Prerequisites
 
 Arduino IDE: Download and install from arduino.cc.
+
 Libraries:
-TinyGPS++: For GPS data parsing.
-SD: For SD card operations.
-SoftwareSerial: For GPS and Bluetooth communication.
-LiquidCrystal: For LCD display.
-Install these via the Arduino Library Manager.
+
+*TinyGPS++: For GPS data parsing.
+*SD: For SD card operations.
+*SoftwareSerial: For GPS and Bluetooth communication.
+*LiquidCrystal: For LCD display.
+*Install these via the Arduino Library Manager.
 
 
 GPSVisualizer Account (optional): For advanced visualization features.
 
-Hardware Setup
-
 
 Install Libraries:
+
 In the Arduino IDE, go to Sketch > Include Library > Manage Libraries and install:
+
 TinyGPS++
+
 SD
+
 SoftwareSerial
+
 LiquidCrystal
 
 
 
 
 Upload the Code:
+
 Connect the Arduino to your computer via USB.
+
 Select the correct board and port in the Arduino IDE.
+
 Upload the sketch to the Arduino.
 
 
@@ -120,6 +134,7 @@ Upload the sketch to the Arduino.
 Bluetooth Setup
 
 Pair the HC-05 Bluetooth module with your mobile device (default password is usually 1234 or 0000).
+
 Use a Bluetooth serial terminal app (e.g., Serial Bluetooth Terminal for Android) to receive GPS data and send motor control commands.
 
 
@@ -128,7 +143,9 @@ Use a Bluetooth serial terminal app (e.g., Serial Bluetooth Terminal for Android
 Power On:
 
 Turn on the bot using the battery pack.
+
 The LCD will display the initial distance (0 meters).
+
 The LED will indicate the system status (e.g., blinking for SD/GPS initialization).
 
 
