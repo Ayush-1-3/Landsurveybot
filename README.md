@@ -21,6 +21,6 @@ MIT License – Feel free to use, modify, and improve this project.
 
 ## 🙋‍♂️ Author
 
-Made by [Your Name] | Electronics & Embedded Hobbyist
+Made by Ayush N | Electronics & Embedded Hobbyist
 
 Feel free to ⭐ star this repo or fork it to improve!
